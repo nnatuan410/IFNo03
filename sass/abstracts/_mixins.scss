@@ -15,8 +15,11 @@
     @if $breakpoint == SP{
         @media (max-width: 767px){@content}; 
     }
+    @if $breakpoint == PC{
+        @media (max-width: 1079px){@content}; 
+    }
     @if $breakpoint == scalePC{
-        @media only screen and (max-width: 1366px) and (min-width: 768px)
+        @media only screen and (max-width: 1079px) and (min-width: 768px)
         {@content}; //scale size fit to rem
     }   
     @if $breakpoint == scaleSP{

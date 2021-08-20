@@ -48,7 +48,7 @@
         &-desc{
             font-size: 1.5rem;
             font-weight: 500;
-            line-height: 1.4;
+            line-height: 1.867;
             text-indent: 1.5rem;
             color: $color-black;
             @include responsive(SP){
@@ -57,7 +57,7 @@
              }
         }
         &-desc:not(:last-child){
-            margin-bottom: 1.8rem;
+            // margin-bottom: 1.8rem;
             @include responsive(SP){
                 margin-bottom: 1.2rem;
              }

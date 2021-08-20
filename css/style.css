@@ -13,9 +13,9 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-@media only screen and (max-width: 1366px) and (min-width: 768px) {
+@media only screen and (max-width: 1079px) and (min-width: 768px) {
   html {
-    font-size: calc(100vw / 136.6);
+    font-size: calc(100vw / 107.9);
   }
 }
 @media only screen and (max-width: 374px) {
@@ -92,10 +92,12 @@ button {
 }
 .heading__title {
   width: 50.8rem;
+  margin-left: 0.2rem;
 }
 @media (max-width: 767px) {
   .heading__title {
     width: 33.2rem;
+    margin: 0;
   }
 }
 .heading__subtitle {
@@ -415,7 +417,7 @@ button {
 .makeNext__content-desc {
   font-size: 1.5rem;
   font-weight: 500;
-  line-height: 1.4;
+  line-height: 1.867;
   text-indent: 1.5rem;
   color: #111111;
 }
@@ -424,9 +426,6 @@ button {
     font-size: 1.3rem;
     line-height: 1.692;
   }
-}
-.makeNext__content-desc:not(:last-child) {
-  margin-bottom: 1.8rem;
 }
 @media (max-width: 767px) {
   .makeNext__content-desc:not(:last-child) {
@@ -525,11 +524,11 @@ button {
 }
 
 .partner {
-  margin: 5.9rem 0 4.8rem;
+  padding: 5.9rem 0 4.8rem;
 }
 @media (max-width: 767px) {
   .partner {
-    margin: 2.9rem 0;
+    padding: 2.9rem 0;
   }
 }
 .partner__list {
@@ -548,7 +547,7 @@ button {
   }
 }
 .partner__item {
-  width: 27rem;
+  width: calc(25% - 3rem);
 }
 @media (max-width: 767px) {
   .partner__item {
@@ -622,9 +621,13 @@ button {
   width: 100%;
   padding: 4rem 3.9rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 1079px) {
   .platform__item {
     flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .platform__item {
     padding: 1.95rem 1.5rem;
   }
 }
@@ -638,7 +641,7 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
+@media (max-width: 1079px) {
   .platform__item-heading {
     max-width: 100%;
     width: 100%;
@@ -659,12 +662,14 @@ button {
   color: #111111;
   font-weight: 500;
 }
-@media (max-width: 767px) {
+@media (max-width: 1079px) {
   .platform__item-desc {
     padding-top: 1.6rem;
-    width: 100%;
     margin: 0;
+    width: 100%;
   }
+}
+@media (max-width: 767px) {
   .platform__item-desc h4 {
     font-size: 1.2rem;
   }
@@ -848,15 +853,14 @@ button {
   }
 }
 .team__content {
-  margin-top: 5.8rem;
+  margin-top: 5.2rem;
   font-size: 1.5rem;
   color: #111111;
 }
 .team__content p {
   text-indent: 1.4rem;
-  line-height: 1;
+  line-height: 1.867;
   font-weight: 500;
-  margin-top: 2rem;
 }
 @media (max-width: 767px) {
   .team__content {
@@ -987,6 +991,7 @@ button {
   letter-spacing: 0.12em;
   margin-bottom: 15.2rem;
   text-align: center;
+  white-space: nowrap;
 }
 @media (max-width: 767px) {
   .header__subtitle {
@@ -1100,7 +1105,6 @@ button {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #f4f4f3;
 }
 
 .container {

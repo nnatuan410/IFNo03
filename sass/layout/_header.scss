@@ -36,6 +36,7 @@
         letter-spacing: .12em;
         margin-bottom: 15.2rem;
         text-align: center;
+        white-space: nowrap;
         @include responsive(SP){
             letter-spacing: 0.12rem;
             line-height: 1.786;

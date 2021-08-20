@@ -11,8 +11,10 @@
     }
     &__title{
         width: 50.8rem;
+        margin-left: .2rem;
         @include responsive(SP){
            width: 33.2rem;
+           margin: 0;
         }
     }
     &__subtitle{
