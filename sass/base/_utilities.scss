@@ -1,0 +1,32 @@
+.link{
+    color: #929292;
+    text-decoration: underline;
+}
+.is-sp{
+    display: none!important;
+    @include responsive(SP){
+        display: inline-block!important;
+    }
+}
+.is-pc{
+    display: inline-block!important;
+    @include responsive(SP){
+        display: none!important;
+    }
+}
+.hidden{
+    transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.show{
+    opacity: 1!important;
+    visibility: visible!important;
+}
+.text-show{
+    display: inline;
+}
+.roteIcon{
+    transform: translateY(-50%) rotate(0)!important;
+}

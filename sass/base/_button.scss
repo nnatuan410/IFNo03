@@ -1,0 +1,60 @@
+.btn-moveTop{
+    width: 5rem;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    cursor: pointer;
+    z-index: 99999999999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+    @include responsive(SP){
+        width: 2.5rem;
+        right: 1.5rem;
+        bottom: 1.5rem;
+    }
+}
+.btn-readMore{
+    font-family: $Poppin-font;
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: none;
+
+    border-top: .1rem solid #f4f4f4;
+    margin-top: .7rem;
+    @include responsive(SP){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    }
+    & img{
+        width: .55rem;
+    }
+}
+.btn-openClose{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: $color-black;
+    width: 100%;
+    height: 3.9rem;
+    padding-right:1.5rem;
+    position: relative;
+    display: none;
+    @include responsive(SP){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        }
+        & img{
+            position: absolute;
+            width: 1rem;
+            right: 2.5rem;
+            top: 50%;
+            transform: translateY(-50%) rotate(-180deg);
+            transition: all .35s ease-in-out;
+        }
+}

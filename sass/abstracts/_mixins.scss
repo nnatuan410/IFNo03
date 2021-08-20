@@ -1,0 +1,26 @@
+@mixin clearfix {
+    &::after{
+        content: "";
+        display: table;
+        clear:both;
+    }
+}
+@mixin absCenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin  responsive($breakpoint) {
+    @if $breakpoint == SP{
+        @media (max-width: 767px){@content}; 
+    }
+    @if $breakpoint == scalePC{
+        @media only screen and (max-width: 1366px) and (min-width: 768px)
+        {@content}; //scale size fit to rem
+    }   
+    @if $breakpoint == scaleSP{
+        @media only screen and (max-width: 374px)
+        {@content}; //scale size fit to rem
+    }   
+}

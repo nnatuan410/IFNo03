@@ -1,0 +1,23 @@
+.section-makeNext{
+    line-height: 1;
+    padding: 7.9rem 0 7rem;
+    background-color: $color-white;
+    @include responsive(SP){
+        padding: 2.6rem 0 2.4rem;
+    }
+}
+.section-register{
+    line-height: 1;
+    background-color: $color-black;
+}
+.section-news{
+    padding: 5.8rem 0 0;
+    @include responsive(SP){
+        padding: 2.8rem 0 0;
+    }
+}
+.main{
+    position: relative;
+    z-index: 999999;
+    background-color: $color-bg;
+}

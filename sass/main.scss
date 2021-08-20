@@ -1,0 +1,22 @@
+@import './abstracts/mixins';
+@import './abstracts/variables';
+
+@import './base/animations';
+@import './base/base';
+@import './base/typpography';
+@import './base/utilities';
+@import './base/button';
+
+@import './components/register';
+@import './components/makenext';
+@import './components/news';
+@import './components/partner';
+@import './components/platform';
+@import './components/team';
+
+@import './layout/header';
+@import './layout/footer';
+@import './layout/container';
+
+@import './pages/home';
+

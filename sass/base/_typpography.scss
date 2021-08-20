@@ -1,0 +1,58 @@
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5.7rem;
+    position: relative;
+    z-index: 1;
+    @include responsive(SP){
+        flex-direction: column-reverse;
+        padding-top: 2.6rem;
+    }
+    &__title{
+        width: 50.8rem;
+        @include responsive(SP){
+           width: 33.2rem;
+        }
+    }
+    &__subtitle{
+        font-size: 1.8rem;
+        color: $color-gold;
+        letter-spacing: .1rem;
+        font-weight: 700;
+        @include responsive(SP){
+            font-size: 1.1rem;
+            margin-bottom: .9rem;
+         }
+    }
+}
+.heading::after{
+    content: '';
+    height: .8rem;
+    width: 45rem;
+    top: -.8rem;
+    right: 0;
+    position: absolute;
+    background-color: $color-gold;
+    z-index: 5;
+    @include responsive(SP){
+        width: 30%;
+        height: .6rem;
+        top: 0;
+     }
+}
+.heading::before{
+    content: '';
+    height: .8rem;
+    width: 75rem;
+    top: -.8rem;
+    left: 0;
+    position: absolute;
+    background-color: $color-deepblue;
+    z-index: 5;
+    @include responsive(SP){
+        width: 70%;
+        height: .6rem;
+        top: 0;
+     }
+}

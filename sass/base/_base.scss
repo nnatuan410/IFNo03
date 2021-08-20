@@ -1,0 +1,66 @@
+@import "../abstracts/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    @include responsive(scalePC){
+        font-size: calc(100vw / 136.6);
+    }
+    @include responsive(scaleSP){
+        font-size: calc(100vw / 37.4);
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Yu Gothic", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+button{
+    cursor: pointer;
+}
+// CSS FIX FOR IE
+@media screen and (min-width:0\0) { 
+
+}
+// css for placeholder
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight:inherit;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000000;
+    font-size: 1.6rem;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000000;
+    font-size: 1.6rem;
+  }

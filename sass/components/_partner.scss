@@ -1,0 +1,25 @@
+.partner{
+    margin: 5.9rem 0 4.8rem;
+    @include responsive(SP){
+        margin: 2.9rem 0;
+    }
+    &__list{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include responsive(SP){
+           width: 100%;
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+           gap: 1.5rem;
+        }
+    }
+    &__item{
+        width: 27rem;
+        @include responsive(SP){
+            width: 100%;
+        }
+    }
+}

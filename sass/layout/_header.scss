@@ -1,0 +1,80 @@
+.header{
+    width: 100%;
+    height: 100vh;
+    line-height: 1;
+    position: relative;
+    &__kv{
+        width: inherit;
+        height: inherit;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title{
+        margin-bottom: 3.5rem;
+        width: 60rem;
+        @include responsive(SP){
+            width: 31.5rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &__subtitle{
+        font-size: 2.045rem;
+        font-weight: 700;
+        letter-spacing: .12em;
+        margin-bottom: 15.2rem;
+        text-align: center;
+        @include responsive(SP){
+            letter-spacing: 0.12rem;
+            line-height: 1.786;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 6rem;
+        }
+    }
+    &__movie-btn{
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 27rem;
+        padding: 2.4rem 0;
+        font-weight: 700;
+        font-size: 1.2rem;
+        letter-spacing: .12em;
+        background-color: $color-black;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @include responsive(SP){
+           font-size: 1.5rem;
+           height: 5rem;
+           width: 34.5rem;
+        }
+    }
+    &__scroll-btn{
+        position: absolute;
+        width: 5.1rem;
+        margin-top: 3.4rem;
+        bottom: 1.9rem;
+        left: 50%;
+        transform: translateX(-50%);
+        @include responsive(SP){
+            width: 4.3rem;
+         }
+    }
+}
