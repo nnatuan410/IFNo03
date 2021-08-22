@@ -25,6 +25,7 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: "Yu Gothic", sans-serif;
+    background-color: $color-bg;
 }
 a{
     text-decoration: none;
@@ -45,7 +46,17 @@ button{
 }
 // CSS FIX FOR IE
 @media screen and (min-width:0\0) { 
-
+    .partner{
+        &__item{
+            width: calc(25% - 3rem);
+            @include responsive(SP){
+                width: calc(33.33% - 1rem)!important;
+            }
+        }
+        &__item:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
 }
 // css for placeholder
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
